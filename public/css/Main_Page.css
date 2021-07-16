@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+*{box-sizing: border-box; font-family: 'Quicksand', sans-serif;}
+body {margin: 0; padding: 0;}
+html {scroll-behavior: smooth;}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #5873e7;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+
+.header__nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header__nav ul li {
+    display: inline-block;
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+}
+
+.header__nav ul li a {
+    height: 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.header__nav ul li a:hover {
+    color: #000000;
+}
+
+
+.header__search form {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.header__search input {
+    width: 300px;
+    height: 36px;
+    outline: none;
+    border: none;
+    border-radius: 18px 0 0 18px;
+    padding-left: 20px;
+}
+
+.header__search button {
+    width: 70px;
+    height: 36px;
+    outline: none;
+    border: none;
+    border-radius: 0 18px 18px 0;
+    cursor: pointer;
+    background-color: #51DBFF;
+}
+
+.header__search button:hover {
+    background-color: #B9DFF6;
+}
+.header__search button svg {
+    height: 20px;
+}
+
+.header__user ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header__user ul li {
+    display: inline-block;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    margin: 0;
+}
+
+.header__user ul li a {
+    height: 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+}
+
+.header__user ul li a svg {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.header__user ul li a:hover {
+    color: #000000;
+}
+
+.header__user ul li a div {
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.header .header__active {
+    background-color: rgb(175, 166, 255);
+    color: #fff;
+}
+
+/*--------------------------------------------Nav------------------------------------*/
+
+.navi {
+    top: 300px;
+    width: 230px;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    margin: 20px 0 0 0;
+    border: 4px double #305ae6;
+    background-image: url('/images/background_list.jpg');
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: 0% 80%;
+}
+
+.navi__title {
+    height: 50px;
+    text-align: center;
+    background-color: #B9DFF6;
+    font-weight: bold;
+    font-size: 20px;
+    color: #4D3A2F;
+    padding-top: 12px;
+}
+
+.navi ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navi ul a {
+    display: block;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #4D3A2F;
+    font-size: 18px;
+}
+
+.navi ul a:hover {
+    border: 2px dotted #4752f1;
+    background-color: #6388f87c;
+}
+
+/*----------------------Section---------------------------------*/
+
+.section {
+    padding: 50px 0;
+}
+
+.section__header {
+    height: 150px;
+    background-color: #CDC0E6;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 20px;
+    position: relative;
+}
+
+.section__header-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+    padding: 20px 30px;
+}
+
+.section__header-flora {
+    position: absolute;
+    width: 800px;
+    left: 22%;
+    top: 20%;
+    display:inline-block;
+}
+
+.section__article {
+    padding: 120px 30px 30px 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.section__article img {
+    width: 150px;
+    height: 200px;
+}
+
+.section__article-container-flower {
+    width: 220px;
+    height: 300px;
+    position: relative;
+    background-color: #BAEDD4;
+    text-align: center;
+    border: 2px dotted #469df0;
+    margin-bottom: 30px;
+    display: in;
+}
+
+.section__article-flower-name {
+    background-color: #c0d5e6;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    z-index: 1;
+}
+
+.section__article-container-flower-cart {
+    display: block;
+    width: 480px;
+    height: 40px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    color: #2199e9;
+    padding-top: 5px;
+}
+
+.section__article-container-flower-cart svg {
+    height: 30px;
+}
+
+.section__article-flower-detail {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.section__article-container-img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.section__article-container-img img {
+    transition: .5s ease;
+    opacity: 1;
+    backface-visibility: hidden;
+}
+
+.section__article-container-img:hover .section__article-flower-detail {
+    opacity: 1;
+}
+
+.section__article-container-img:hover img{
+    opacity: 0.6;
+}
+
+.section__article-flower-detail a {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.section__article-flower-detail a:hover {
+    background-color: #7099f1;
+}
+
+.section__header-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+}
+/*-------------------------Footer---------------------------*/
+.footer {
+    left: 0;
+    bottom: 0;
+    height: 80px;
+    right: 0;
+    position: fixed;
+    background-color: #81B5CF;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    z-index: 1;
+}
+
+#back-top {
+    width: 50px;
+    height: 50px;
+    background-color: #81B5CF;
+    position: fixed;
+    bottom: 90px;
+    right: 10px;
+    z-index: 10;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin: 10px 7px 0 10px;
+}
+.footer_left{
+
+
+    margin:0 0 0 50px ;
+    padding: 0 0 0 0 ;
+    float: left;
+}

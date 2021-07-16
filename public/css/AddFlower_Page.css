@@ -1,0 +1,67 @@
+html,body{
+    background-image: url('../images/background_cart.jpg');
+
+    }
+.section__article {
+    padding: 120px 30px 30px 30px;
+    background-image: url(../images/background_cart.jpg);
+}
+
+.section__article-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section__article-container form {
+    display: flex;
+    padding: 0 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.item {
+    display: flex;
+    margin: 10px 20px;
+    justify-content: space-evenly;
+    font-size: 18px;
+    width: 400px;
+}
+
+.section__article-container form input {
+    height: 30px;
+    width: 250px;
+    outline: none;
+    border: 2px solid #000;
+}
+
+.section__article-container form input[type=file] {
+    border: none;
+}
+
+textarea {
+    height: 50px;
+    outline: none;
+    width: 250px;
+}
+
+.section__article-container form button {
+    width: 100px;
+    height: 40px;
+    background-color: #fff;
+    border: 2px dotted #000000;
+ 
+    color: #000000;
+}
+
+.section__article-container form button:hover {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #BFE7E5;
+}
+
+.section__article-container form select {
+    width: 100px;
+    height: 30px;
+}
