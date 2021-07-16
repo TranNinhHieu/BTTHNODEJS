@@ -3,7 +3,7 @@ html,body{
 
     }
 .section__article {
-    padding: 120px 30px 30px 30px;
+    padding: 30px 30px 30px 30px;
     background-image: url(../images/background_cart.jpg);
 }
 
@@ -25,10 +25,15 @@ html,body{
     display: flex;
     margin: 10px 20px;
     justify-content: space-evenly;
-    font-size: 18px;
+    
     width: 400px;
 }
+.table_add{
+    padding : 0 30% 0 30%;
+    font-size: 20px;
 
+
+}
 .section__article-container form input {
     height: 30px;
     width: 250px;
@@ -64,4 +69,9 @@ textarea {
 .section__article-container form select {
     width: 100px;
     height: 30px;
+}
+
+th{
+    padding: 10px 10px 10px 10px
+
 }

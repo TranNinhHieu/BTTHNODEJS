@@ -67,29 +67,43 @@
             <div class="section__article-container">
                 <h1>THÊM BÓ HOA MỚI</h1>
                 <form action="/addnewflower" method="POST" name="form3" enctype="multipart/form-data">
-                    <div class="item">
-                        <label for="nameflower">Tên bó hoa: </label>
-                        <input id="nameflower" name="nameflower" type="text">
-                    </div>
-                    <div class="item">
-                        <label for="typeflower">Loại hoa: </label>
-                        <select name="typeflower" id="typeflower">
-                            <%-dslh%>
-                        </select>
-                    </div>
-                    <div class="item">
-                        <label for="describe">Thành phần: </label>
-                        <textarea name="description" id="description"></textarea>
-                    </div>
-                    <div class="item">
-                        <label for="cost">Giá bán: </label>
-                        <input type="text" id="cost" name="cost">
-                    </div>
-                    <div class="item">
-                        <label for="file">Hình: </label>
-                        <input type="file" name="file" id="file" size="45">
-                    </div>
-                    <button type="submit">Thêm hoa</button>
+                    <table class="table_add" >
+                        <tr>
+                            <div class="item">
+                                <th><label for="nameflower">Tên bó hoa: </label></th>
+                                <th><input id="nameflower" name="nameflower" type="text"></th>
+                            </div>
+                        </tr>
+                        <tr>
+                            <div class="item">
+                                <th><label for="typeflower">Loại hoa: </label></th>
+                                <th><select name="typeflower" id="typeflower">
+                                    <%-dslh%>
+                                </select></th>
+                            </div>
+                        </tr>
+                        <tr>
+                                <div class="item">
+                                    <th><label for="describe">Thành phần: </label></th>
+                                    <th><textarea name="description" id="description"></textarea></th>
+                                </div>
+                        </tr>
+                        <tr>
+                                <div class="item">
+                                    <th><label for="cost">Giá bán: </label></th>
+                                    <th><input type="text" id="cost" name="cost"></th>
+                                </div>
+                        </tr>  
+                        <tr>    
+                                <div class="item">
+                                    <th><label for="file">Hình: </label></th>
+                                    <th><input type="file" name="file" id="file" size="45"></th>
+                                </div>
+                        </tr>  
+                        <tr>
+                                <th colspan="2"><button type="submit" >Thêm hoa</button></th>
+                        </tr>
+                    </table>
                 </form>
             </div>
         </div>
